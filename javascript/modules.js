@@ -13,6 +13,7 @@ export default function loadArticles() {
             name: "Buy Toilet Paper",
             description: "Charmin Ultrasoft"
         }];
+        //You can use map
     data.forEach(listItem => {
         createItem(listItem, '#itemTemplate');
     });
