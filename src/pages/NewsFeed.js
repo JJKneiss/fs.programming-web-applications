@@ -25,22 +25,26 @@ class NewsFeed extends Component {
     // add function
     addNewsPost = e => {
         e.preventDefault();
+        //Keep working on this.
     }
     // delete function
     deleteNewsPost = e => {
         e.preventDefault();
+        //Keep working on this.
     }
 
     render() {
         let newsfeedList = this.state.newsfeed.map((element, index) => {
-            return <ListItem element />
+            //Add the arguments in line 35 to line 37.
+            return <ListItem key={index} val={element} />
         });
         return (
             <div className="App">
                 <Header />
                 <section>
-                    <ListItem />
-                    <Button btnText='adfa' />
+                    {/* <ListItem /> */}
+                    {/* <Button btnText='adfa' /> */}
+                    {newsfeedList}
                 </section>
                 <Footer />
             </div>
