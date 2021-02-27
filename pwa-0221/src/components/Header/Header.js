@@ -1,12 +1,22 @@
 import React from 'react';
-// import './Header.css'
 
 import Nav from '../Nav/Nav';
+import Search from "../Search/Search";
+
+import '../Header/Header.css'
 
 const Header = props => {
     return (
         <header>
-            <h1>Hello World</h1>
+            <Search />
+            <div>
+                <button>
+                    {/* <img alt="profile" /> */}
+                </button>
+                <button>
+                    {/* <img alt="settings" /> */}
+                </button>
+            </div>
             <Nav />
         </header>
     );
