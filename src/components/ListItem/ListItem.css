@@ -1,11 +1,12 @@
 article{
     width: 70%;
-    background-color: lightcyan;
+    background-color: var(--accent1);
     margin: 2rem auto;
     padding: 2rem 0;
-    border: 1px solid lightcyan;
+    border: 2px solid var(--accent3);
+    border-radius: 2rem;
 }
-article h2, article p{
+article h2, article p, article img, article h3{
     text-align: left;
     margin: 2rem 1rem;
 }

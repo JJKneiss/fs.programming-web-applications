@@ -1,8 +1,15 @@
 .adverts img {
-    padding: 10px;
-    background-color: beige;
-    margin: 1rem 0;
+    padding: 10rem;
+    background-color: var(--accent1);
+    margin: 2rem 0;
+    display: block;
+    border: var(--accent2);
+
+    width: 10%;
 }
 .adverts{
-    /* float: right; */
+    float: right;
+    background-color: var(--accent3);
+    list-style: none;
+    padding: 1rem;
 }
