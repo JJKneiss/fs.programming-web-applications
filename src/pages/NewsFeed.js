@@ -66,19 +66,18 @@ class NewsFeed extends Component {
         let newsfeedList = this.state.newsfeed.map((element, index) => {
             return <ListItem key={index} val={element} method={() => this.deleteNewsPost(index)} />
         });
-        let advertList = this.state.advert.map((element, index) => {
-            return <Advert key={index} val={element} />
-        });
+        // let advertList = this.state.advert.map((element, index) => {
+        //     return <Advert key={index} val={element} />
+        // });
         return (
             <div className="App">
                 <Header />
                 <h2>NewsFeed</h2>
-                <section className='adverts'>
+                {/* <section >
                     {advertList}
-                </section>
+                </section> */}
                 <PostForm getUserInput={this.getUserInput} addPost={this.addNewsPost} />
                 <section>
-
                     {newsfeedList}
                 </section>
             </div >

@@ -1,3 +1,7 @@
 h1 {
     text-align: left;
 }
+header ul li {
+    display: inline;
+    width: fit-content;
+}

@@ -3,7 +3,7 @@ import '../Advert/Advert.css';
 const Advert = props => {
     return (
         <a key={props.id}>
-            <img src={props.val.img} alt={props.val.alt} />
+            <img src={props.img} alt={props.alt} />
         </a>
     );
 }

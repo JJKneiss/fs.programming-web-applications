@@ -13,6 +13,7 @@ nav li a:hover {
 }
 nav{
     width: min-content;
+    float: left;
 }
 nav ul{
     list-style: none;
