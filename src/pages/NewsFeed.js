@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
 import ListItem from '../components/ListItem/ListItem';
 import PostForm from '../components/PostForm/PostForm';
 import Advert from '../components/Advert/Advert';
@@ -82,8 +81,6 @@ class NewsFeed extends Component {
                     Posts
                     {newsfeedList}
                 </section>
-
-                <Footer />
             </div >
         );
     }

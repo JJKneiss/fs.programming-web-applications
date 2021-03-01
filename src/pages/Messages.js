@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from '../components/Header/Header';
-import Nav from '../components/Nav/Nav';
-import Footer from '../components/Footer/Footer';
+import Button from '../components/Button/Button';
 class Messages extends Component {
     state = {
         items: [],
@@ -18,6 +17,11 @@ class Messages extends Component {
                 })
             })
     }
+    // delete function
+    deleteNewsPost = key => {
+        this.state.items.splice(key, 1);
+        this.setState({ items: this.state.items });
+    }
     render() {
         let { items, loading } = this.state;
         let messageData = items.map(item => (
@@ -26,6 +30,7 @@ class Messages extends Component {
                 <time></time>
                 <h2>{item.name.first} {item.name.last}</h2>
                 <p>{item.name.first} Liked Your Photo </p>
+                <Button btnText='delete' method={() => this.deleteNewsPost(item)} />
             </article>
         ))
         if (!loading) {
@@ -35,7 +40,6 @@ class Messages extends Component {
                     <section>
                         <h2>Loading Messages</h2>
                     </section>
-                    <Footer />
                 </div>
             );
         }
@@ -46,7 +50,6 @@ class Messages extends Component {
                     <section>
                         <h2>{messageData}</h2>
                     </section>
-                    <Footer />
                 </div>
             );
         }

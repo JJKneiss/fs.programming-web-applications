@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import Header from '../components/Header/Header';
-import Nav from '../components/Nav/Nav';
-import Footer from '../components/Footer/Footer';
 import Input from '../components/Input/Input';
 import Button from '../components/Button/Button';
 
@@ -44,8 +42,6 @@ class Profile extends Component {
                     {inputList}
                     <Button btnText='Update Profile' />
                 </form>
-                <Footer />
-
             </div >
 
         );
