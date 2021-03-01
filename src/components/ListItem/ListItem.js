@@ -1,13 +1,14 @@
 import React from 'react';
-// import './footer.css'
+import Button from '../Button/Button'
+import { AiOutlineDelete } from 'react-icons/ai'
+import './ListItem.css'
 
 const ListItem = props => {
     return (
         <article key={props.id}>
-            <h1>{props.val.title}</h1>
-            <h2>{props.val.desc}</h2>
-            <p>{props.img}</p>
-            <button method={props.val.addBtn}> Delete</button>
+            <h2>{props.val.title}</h2>
+            <p>{props.val.desc}</p>
+            <button onClick={props.method}> <AiOutlineDelete size={25} /></button>
         </article>
     );
 }

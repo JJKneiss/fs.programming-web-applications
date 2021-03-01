@@ -1,5 +1,17 @@
+:root{
+  /* Color Palette */
+  /*https://coolors.co/423e37-e3b23c-edebd7-a39594-6e675f */
+  --secondary: #423e37ff;
+  --primary: #e3b23cff;
+  --accent1: #edebd7ff;
+  --accent2: #a39594ff;
+  --accent3: #6e675fff;
+}
+
 .App {
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .App-logo {
