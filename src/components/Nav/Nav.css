@@ -1,0 +1,11 @@
+nav li a {
+    color: whitesmoke;
+    background-color: grey;
+    border-right: 2px solid brown;
+    padding: 1rem;
+    display: block;
+}
+nav{
+    /* float: left; */
+    width: min-content;
+}
