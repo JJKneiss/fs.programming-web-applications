@@ -8,6 +8,9 @@ nav li a {
     font-weight: bold;
 
 }
+nav li a:hover {
+    color: var(--accent1);
+}
 nav{
     width: min-content;
 }
