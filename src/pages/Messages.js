@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Header from '../components/Header/Header';
-import Button from '../components/Button/Button';
+import UserMessage from '../components/UserMessage.js/UserMessage';
 class Messages extends Component {
     state = {
         items: [],
@@ -24,21 +24,24 @@ class Messages extends Component {
     }
     render() {
         let { items, loading } = this.state;
-        let messageData = items.map(item => (
-            <article>
-                <img src={item.picture.medium} />
-                <time></time>
-                <h2>{item.name.first} {item.name.last}</h2>
-                <p>{item.name.first} Liked Your Photo </p>
-                <Button btnText='delete' method={() => this.deleteNewsPost(item)} />
-            </article>
-        ))
+        let messageData = items.map((element, index) => {
+            return <UserMessage key={index} val={element} method={() => this.deleteNewsPost(index)} />
+        });
+        // let messageData = items.map(item => (
+        //     <UserMessage
+        //         img={item.picture.large}
+        //         firstName={item.name.first}
+        //         lastName={item.name.last}
+        //         method={() => this.deleteNewsPost(item)}
+        //     />
+        // ))
         if (!loading) {
             return (
                 <div className="App">
                     <Header />
                     <section>
-                        <h2>Loading Messages</h2>
+                        <h2>Messages</h2>
+                        Loading Messages
                     </section>
                 </div>
             );
@@ -48,7 +51,8 @@ class Messages extends Component {
                 <div className="App">
                     <Header />
                     <section>
-                        <h2>{messageData}</h2>
+                        <h2>Messages</h2>
+                        {messageData}
                     </section>
                 </div>
             );

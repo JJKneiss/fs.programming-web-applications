@@ -6,7 +6,7 @@ import './ListItem.css'
 const ListItem = props => {
     return (
         <article key={props.id}>
-            <h2>{props.val.title}</h2>
+            <h3>{props.val.title}</h3>
             <p>{props.val.desc}</p>
             <button onClick={props.method}> <AiOutlineDelete size={25} /></button>
         </article>

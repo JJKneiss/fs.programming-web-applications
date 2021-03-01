@@ -5,11 +5,8 @@ import './Search.css'
 const Search = props => {
     return (
         <form className='search'>
-            <label>
-                <AiOutlineSearch size={20} /> Search
-                <input />
-            </label>
-
+            <AiOutlineSearch size={20} />
+            <input placeholder='Search' />
         </form >
     );
 }

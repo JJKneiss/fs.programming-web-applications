@@ -72,13 +72,13 @@ class NewsFeed extends Component {
         return (
             <div className="App">
                 <Header />
+                <h2>NewsFeed</h2>
                 <section className='adverts'>
-                    Ads
                     {advertList}
                 </section>
                 <PostForm getUserInput={this.getUserInput} addPost={this.addNewsPost} />
                 <section>
-                    Posts
+
                     {newsfeedList}
                 </section>
             </div >
