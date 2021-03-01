@@ -9,6 +9,7 @@ class Profile extends Component {
         return (
             <div className="App">
                 <Header />
+                <h2>Profile</h2>
                 <Footer />
             </div>
         );

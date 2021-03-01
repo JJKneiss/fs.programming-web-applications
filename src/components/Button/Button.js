@@ -3,7 +3,7 @@ import ButtonCSS from '../Button/Button.css';
 
 const Button = props => {
     return (
-        <button onClick={props.method}>
+        <button onClick={props.method} disabled={props.disabled}>
             {props.btnText}
         </button>
     );

@@ -1,5 +1,8 @@
-a.advert img {
+.adverts img {
     padding: 10px;
     background-color: beige;
     margin: 1rem 0;
+}
+.adverts{
+    /* float: right; */
 }

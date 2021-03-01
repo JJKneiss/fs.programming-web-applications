@@ -9,6 +9,9 @@ class Messages extends Component {
         return (
             <div className="App">
                 <Header />
+                <section>
+                    <h2>Messages</h2>
+                </section>
                 <Footer />
             </div>
         );
